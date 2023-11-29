@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="basic calculator assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/css"
+                      href="/basic_calculator/static/src/css/montserrat_font.css"/>
+                <link rel="stylesheet" type="text/css"
+                      href="/basic_calculator/static/src/css/calculator_styles.css"/>
+                <script type="text/javascript" src="/basic_calculator/static/src/js/calculator.js"/>
+                <script type="text/javascript" src="/basic_calculator/static/src/js/calculator_item.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<templates xml:space="preserve">
+    <t t-name="basic_calculator.calculator">
+        <li class="basic_calculator_item">
+            <a data-toggle="dropdown" data-display="static" aria-expanded="false" title="Calculator" href="#"
+               role="button">
+                <i class="fa fa-calculator"/>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right basic_calculator_dropdown" role="menu">
+                <div class="calc-display">
+                    <div class="calc-display-span secondary-display" id="secondary-display">
+                        <input type="text" id="math_operation" value="0" readonly="1"/>
+                    </div>
+                    <div class="calc-display-span primary-display" id="display">
+                        <input type="text" id="number" readonly="1"/>
+                    </div>
+                </div>
+
+                <div class="calc-display-hr"></div>
+
+                <div class="calc-btn" id="btn">
+                    <button class="calc-btn-primary control-btn calc_control" id="sign">+/-</button>
+                    <button class="calc-btn-primary control-btn calc_control" id="clear">CE</button>
+                    <button class="calc-btn-primary control-btn calc_control" id="clear_all">C</button>
+                    <button class="calc-btn-primary control-btn calc_control" id="delete">del</button>
+
+                    <button class="calc-btn-primary calc_value" value="7" id="seven">7</button>
+                    <button class="calc-btn-primary calc_value" value="8" id="eight">8</button>
+                    <button class="calc-btn-primary calc_value" value="9" id="nine">9</button>
+                    <button class="calc-btn-primary btn-bg calc_operator" value="/" id="divide">÷</button>
+
+                    <button class="calc-btn-primary calc_value" value="4" id="four">4</button>
+                    <button class="calc-btn-primary calc_value" value="5" id="five">5</button>
+                    <button class="calc-btn-primary calc_value" value="6" id="six">6</button>
+                    <button class="calc-btn-primary btn-bg calc_operator" value="*" id="multiply">x</button>
+
+                    <button class="calc-btn-primary calc_value" value="1" id="one">1</button>
+                    <button class="calc-btn-primary calc_value" value="2" id="two">2</button>
+                    <button class="calc-btn-primary calc_value" value="3" id="three">3</button>
+                    <button class="calc-btn-primary btn-bg calc_operator" value="+" id="add">+</button>
+
+                    <button class="calc-btn-primary btn-bg calc_value" value="." id="decimal">.</button>
+                    <button class="calc-btn-primary calc_value" value="0" id="zero">0</button>
+                    <button class="calc-btn-primary btn-bg-equal calc_control" id="equals">=</button>
+                    <button class="calc-btn-primary btn-bg calc_operator" value="-" id="subtract">-</button>
+                </div>
+	        </div>
+        </li>
+    </t>
+</templates>

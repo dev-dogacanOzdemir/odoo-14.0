@@ -1,0 +1,94 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ui_python
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-14 08:59+0000\n"
+"PO-Revision-Date: 2022-11-14 08:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ui_python
+#: model_terms:ir.ui.view,arch_db:ui_python.ui_python_form
+msgid "Clean"
+msgstr "مسح"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__create_uid
+msgid "Created by"
+msgstr "تم الانشاء بواسطة"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__create_date
+msgid "Created on"
+msgstr "تم الانشاء في"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: ui_python
+#: model_terms:ir.ui.view,arch_db:ui_python.ui_python_form
+msgid "Execute Code"
+msgstr "استخراج الكود"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__helpful_commands
+msgid "Helpful Commands"
+msgstr "اوامر مساعدة"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__id
+msgid "ID"
+msgstr "معرف"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python____last_update
+msgid "Last Modified on"
+msgstr "اخر تعديل في"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__write_uid
+msgid "Last Updated by"
+msgstr "اخر تحديث بواسطة"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__write_date
+msgid "Last Updated on"
+msgstr "اخر تحديث في"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__model_id
+msgid "Model"
+msgstr "الكائن"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__python_code
+msgid "Python Code"
+msgstr "كود بايثون"
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__rec_name
+msgid "Rec Name"
+msgstr ""
+
+#. module: ui_python
+#: model:ir.model.fields,field_description:ui_python.field_ui_python__results
+msgid "Results"
+msgstr "النتيجة"
+
+#. module: ui_python
+#: model:ir.actions.act_window,name:ui_python.ui_python_action
+#: model:ir.model,name:ui_python.model_ui_python
+#: model:ir.ui.menu,name:ui_python.ui_python_menu
+#: model:res.groups,name:ui_python.ui_python_user
+msgid "Ui Python"
+msgstr ""

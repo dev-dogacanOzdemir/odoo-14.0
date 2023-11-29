@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--Form View-->
+
+    <record model="ir.ui.view" id="ui_python_form">
+        <field name="name">ui.python.form</field>
+        <field name="model">ui.python</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="model_id"/>
+                        <field name="python_code" widget="ace" options="{'mode': 'python'}"/>
+                        <field name="results" readonly="1"/>
+                    </group>
+                </group>
+                <button name="execute_method" string="Execute Code" type="object"
+                        class="fa fa-check oe_highlight" data-hotkey="q"/>
+                <button name="clear_method" string="Clean" type="object"
+                        class="fa fa-refresh" data-hotkey="c"/>
+                <br></br>
+                <br></br>
+                <br></br>
+                <field name="helpful_commands" readonly="1" nolabel="1"/>
+            </form>
+        </field>
+    </record>
+
+
+    <!--Action -->
+
+
+    <record model="ir.actions.act_window" id="ui_python_action">
+        <field name="name">Ui Python</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ui.python</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+    </record>
+
+
+    <!--Menu View-->
+
+
+    <menuitem id="ui_python_menu" action="ui_python_action" name="Ui Python"
+              web_icon="ui_python,static/description/icon.png"/>
+
+
+</odoo>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="todoo.CalculatorItem">
+        <li class="o_mail_navbar_item">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Calculator" href="#">
+                <i class="fa fa-calculator"/>
+            </a>
+            <ul class="o_mail_navbar_dropdown dropdown-menu" role="menu">
+                <li class="o_mail_navbar_dropdown_top">
+                    <div class="calculadora">
+                        <center>
+                            <form id="form-calc" class="form-calc" name="hesaplayici-form">
+                                <div>
+                                    <h3 name="AnaBaslik">Birim Ağırlık Hesaplayıcı
+                                    <br/>
+                                        -------------------------------------
+                                        <br/>
+                                    </h3>
+                                </div>
+                                <div>
+                                    <select class ="form-select" id="kesim-turu" onchange="hesaplayıcı()">
+                                        <option id="default-value" value="default" selected="selected"
+                                                disabled="disabled">---Kesim Türü---</option>
+                                        <option value="levha">Levha ve Lama</option>
+                                        <option value="doluyuvarlakcubuk">Dolu Yuvarlak Çubuk</option>
+                                        <option value="dolukarecubuk">Dolu Kare Çubuk</option>
+                                        <option value="dolualtigencubuk">Dolu Altıgen Çubuk</option>
+                                        <option value="kosebent">Köşebent</option>
+                                        <option value="tprofil">T-Profil</option>
+                                        <option value="uprofil">U-Profil</option>
+                                        <option value="ıprofil">I-Profil</option>
+                                        <option value="kutuprofil">Kutu Profil</option>
+                                        <option value="boruprofil">Boru Profil</option>
+                                        <option value="disk">Disk</option>
+                                    </select>
+                                    <button id="temizle-buton" onclick="temizle()">Sıfırla</button>
+                                </div>
+                                <div>
+                                    <h3 name="MaddeKodu">Madde Kodu</h3>
+                                    <select id="madde-kodu-ozgul-agirlik-secimi">
+                                        <option value="0.00270">1070</option>
+                                        <option value="0.00270">1060</option>
+                                        <option value="0.00271">1050</option>
+                                        <option value="0.00271">1030</option>
+                                        <option value="0.00280">2014</option>
+                                        <option value="0.00277">2024</option>
+                                        <option value="0.00273">3003</option>
+                                        <option value="0.00268">5052</option>
+                                        <option value="0.00265">5754</option>
+                                        <option value="0.00265">5083</option>
+                                        <option value="0.00271">6013</option>
+                                        <option value="0.00270">6061</option>
+                                        <option value="0.00271">6063</option>
+                                        <option value="0.00270">6082</option>
+                                        <option value="0.00271">6351</option>
+                                        <option value="0.00282">7075</option>
+                                        <option value="0.00282">7050</option>
+                                        <option value="0.00282">7039</option>
+                                    </select>
+                                </div>
+                                <div class="hesaplama-alani" id="hesaplama-alani">
+                                    <div>
+                                          <h6>
+                                        Adet :
+                                        <input id="madde-adet" type="number" min="0">adet</input>
+
+                                    </h6>
+                                        <h6>
+                                        Kalınlık(S₁) :
+                                        <input id="madde-kalinlikA" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Kalınlık(S₂) :
+                                        <input id="madde-kalinlikB" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Genişlik(A) :
+                                        <input id="madde-genislik" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Uzunluk(L) :
+                                        <input id="madde-uzunluk" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Çap(D) :
+                                        <input id="madde-cap" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Boyut(a) :
+                                        <input id="madde-boyut" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Yükseklik(B) :
+                                        <input id="madde-yukseklik" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Dış Çap(D) :
+                                        <input id="madde-dis-cap" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        İç Çap(d) :
+                                        <input id="madde-ic-cap" type="number" min="0">mm</input>
+
+                                    </h6>
+                                        <h6>
+                                        Talaş Payı(%) :
+                                        <input id="madde-talas-payi" min="0"></input>
+                                    </h6>
+
+                                </div>
+
+                                    <div>
+                                    <button id="sonuc-buton">
+                                        Hesapla
+                                    </button>
+                                        <label id="sonuc-label"></label><label> kg</label>
+
+                                </div>
+                                </div>
+                            </form>
+                        </center>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </t>
+</templates>
+
